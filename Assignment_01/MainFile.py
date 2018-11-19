@@ -32,13 +32,22 @@ songList = []
 for line in csv_song_list:
     a_song_str = line
     a_song = Song(a_song_str[0], a_song_str[1], a_song_str[2], a_song_str[3],)
+
     print("{:>10s} {:<30s} {:<30s} {:>5s}".format(a_song.learned, a_song.name, a_song.artist, a_song.year))
+
+    #print("{:>5s} {:<30s} {:<30s} {:>5s}".format(a_song.learned, a_song.name, a_song.artist, a_song.year))
+
     songList.append(a_song)
 
 print()
 print("-------------------")
 
+
 print("{:<10s} {:<30s} {:<30s} {:>5s}".format("LEARNED?", "SONG NAME", "ARTIST", "YEAR"))
 
 for element in songList:
     print("{:<10s} {:<30s} {:<30s} {:>5s}".format(element.learned, element.name, element.artist, element.year))
+
+for element in songList:
+    print("{:>5s} {:<30s} {:<30s} {:>5s}".format(element.learned, element.name, element.artist, element.year))
+
