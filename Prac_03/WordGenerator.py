@@ -20,7 +20,8 @@ def main():
     word_formatOK = wordFormatValidity(word_format)
 
     while word_formatOK == False:
-            word_format = input("Word format, please: ")
+        word_format = input("Word format, please: ")
+        word_formatOK = wordFormatValidity(word_format)
 
     word = ""
     for kind in word_format:
@@ -29,3 +30,5 @@ def main():
         else:
             word += random.choice(VOWELS)
     print(word)
+
+main()
