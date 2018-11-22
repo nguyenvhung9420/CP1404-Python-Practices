@@ -11,7 +11,7 @@ VOWELS = "aeiou"
 CONSONANTS = "bcdfghjklmnpqrstvwxyz"
 WORDFORMAT_REP = "#%*"
 
-wordFormatLength = random.randint(1, 10)
+wordFormatLength = 10
 wordFormat = ""
 word = ""
 
