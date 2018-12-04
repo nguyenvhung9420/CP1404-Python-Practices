@@ -17,7 +17,8 @@ def main():
     minLength = 2
 
     maxLength = int(input("Please enter the maximum length of password you want: "))
-
+    
+    #The codes below are for checking if the password is OK or not:
     print("OK, Your password must be between 2 and", maxLength,
           "characters, and contain: ")
     print("\t1 or more uppercase characters")
