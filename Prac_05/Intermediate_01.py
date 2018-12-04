@@ -13,3 +13,6 @@ for key in colorPallettes.keys():
 
 nameToPrint = input("Please type the color name: ")
 print(colorPallettes[nameToPrint])
+
+#ahihi
+#this is a feedback
