@@ -21,10 +21,10 @@ class DynWidgetsApp(App):
     def add_widgets(self):
         for name in self.names:
             temp_button = Button(text=name, id=name)
-            temp_button.bind(on_release=self.press_entry)
+            self.press(temp_button)
             self.root.ids.main_box.add_widget(temp_button)
 
-    def press_entry(self, instance):
+    def press(self, instance):
         name = instance.id
         self.status_text = "{}'s name is {}".format(name, name)
 
