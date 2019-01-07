@@ -63,9 +63,9 @@ def main():
             extension_dict[key_to_add].append(each)
 
     print(extension_dict)
-    breakpoint()
+    #breakpoint()
 
-    for key in extension_list.keys:
+    for key in extension_dict.keys():
         if key != "":
             try:
                 os.mkdir(key)
@@ -86,11 +86,11 @@ def main():
             continue
 
         #find the dir to move:
-        for key in extension_dict:
+        for key, value in extension_dict.items():
             if extension in extension_dict[key]:
                 dir_to_move = key
 
-        shutil.copy(filename, key + '/' + filename)
+        shutil.copy(filename, dir_to_move + '/' + filename)
 
 
 def demo_walk():
